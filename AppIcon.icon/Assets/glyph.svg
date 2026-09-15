@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <g transform="translate(30,12) skewX(-10)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cursive "C" -->
+    <path stroke-width="46" d="M600,340 C520,290 400,290 330,350 C260,410 250,520 300,590 C350,660 440,690 520,665 C555,655 580,635 595,610"/>
+    <!-- ligature into first "e" -->
+    <path stroke-width="30" d="M595,610 C620,630 635,645 645,660"/>
+    <!-- first "e" loop -->
+    <path stroke-width="30" d="M645,660 C645,610 675,565 720,565 C765,565 790,600 770,635 C755,660 720,660 700,635 C692,652 705,663 730,663"/>
+    <!-- ligature into second "e" -->
+    <path stroke-width="26" d="M730,663 C755,660 775,658 790,655"/>
+    <!-- second "e" loop -->
+    <path stroke-width="26" d="M790,655 C790,610 818,568 858,568 C898,568 920,600 902,632 C888,655 856,655 838,632 C831,647 843,657 866,655"/>
+    <!-- final flourish tail -->
+    <path stroke-width="20" d="M866,655 C888,650 905,640 915,622"/>
+  </g>
+  <!-- flat horizontal baseline flourish -->
+  <line x1="150" y1="770" x2="850" y2="770" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+</svg>

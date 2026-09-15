@@ -1,0 +1,41 @@
+name: Min
+options:
+  bundleIdPrefix: com.ceresify
+  deploymentTarget:
+    iOS: "18.0"
+  # Xcode 26 Icon Composer bundles (.icon) must stay a single package reference;
+  # without this, XcodeGen explodes it into loose icon.json / Assets files and
+  # Xcode no longer recognizes it as an app icon source.
+  # https://github.com/yonaskolb/XcodeGen/issues/1556
+  fileTypes:
+    icon:
+      file: true
+
+targets:
+  Min:
+    type: application
+    platform: iOS
+    sources:
+      - path: Min
+      - path: AppIcon.icon
+    info:
+      path: Min/Info.plist
+      properties:
+        CFBundleDisplayName: Min
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_NAME: Min
+        PRODUCT_BUNDLE_IDENTIFIER: com.ceresify.min
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGN_IDENTITY: ""
+        DEVELOPMENT_TEAM: ""
