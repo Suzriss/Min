@@ -1,0 +1,10 @@
+{ Filter = { Executables = ( "Flex" ); }; }
+
+/*
+If FlexFix doesn't load, Flex's actual executable name may differ.
+Check it on-device with:
+  ls /var/jb/Applications/ | grep -i flex
+  plutil -key CFBundleExecutable /var/jb/Applications/<Flex App Name>.app/Info.plist
+Then update Executables above to match, e.g.:
+  { Filter = { Executables = ( "Flex" ); Bundles = ( "com.dxcool223.flex3" ); }; }
+*/

@@ -1,0 +1,9 @@
+Package: com.suzriss.flexfix
+Name: FlexFix
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Blocks Fabric/Crashlytics init in Flex to prevent EXC_GUARD crash on iOS 18.
+Maintainer: AYMN
+Author: AYMN
+Section: Tweaks
+Depends: mobilesubstrate

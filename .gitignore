@@ -1,13 +1,3 @@
-# XcodeGen-generated project (regenerated in CI via `xcodegen generate`)
-*.xcodeproj
-*.xcworkspace
-
-# Generated Info.plist (written by XcodeGen from project.yml)
-Min/Info.plist
-
-# Build products
-build/
-DerivedData/
-*.ipa
-
-.DS_Store
+.theos/
+packages/
+obj/
