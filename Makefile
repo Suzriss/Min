@@ -11,5 +11,6 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = FlexFix
 FlexFix_FILES = Tweak.x
 FlexFix_CFLAGS = -fobjc-arc
+FlexFix_LIBRARIES = substrate
 
 include $(THEOS_MAKE_PATH)/tweak.mk
